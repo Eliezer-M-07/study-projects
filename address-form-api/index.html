@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Endereço</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="cal-12 cal-md-6 cal-lg-4 justify-content-center">
+                <div class="card p-4 shadow-lg" >
+                    <h5 class="card-title mb-3">Formulário Endereço</h5>
+                        <div class="card-body p-4 border rounded-3">
+                        <form class="needs-validation">
+                            <div class="mb-3">
+                                <label class="form-label">CEP</label>
+                                <input id="cep" type="text" class="form-control" placeholder="00000000" required maxlength="8">
+                                <div id="feedback" class="form-text text-danger"></div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Rua</label>
+                                <input id="address" type="text" class="form-control" placeholder="Nome da rua" disabled required>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label class="form-label">Número</label>
+                                    <input id="number" type="text" class="form-control"  required>
+                                </div>
+
+                                <div class="col-md-8 mb-3">
+                                    <label class="form-label">Complemento (Opcional)</label>
+                                    <input id="complement" type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Bairro</label>
+                                <input id="neighborhood" type="text" class="form-control" disabled required>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-8 mb-3">
+                                    <label class="form-label">Cidade</label>
+                                    <input id="city" type="text" class="form-control" disabled required>
+                                </div>
+
+                                <div class="col-md-1 mb-3">
+                                    <label class="form-label">Estado</label>
+                                    <input id="state" class="form-control" disabled required>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Salvar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
